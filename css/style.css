@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #0ea765;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.cta {
+  background: white;
+  color: #0ea765;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: white;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-left .tagline {
+  display: inline-block;
+  font-size: 1em;
+  color: #0ea765;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero-left h1 {
+  font-size: 2.8em;
+  margin: 10px 0 20px;
+  color: #222;
+}
+
+.hero-left p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0ea765;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.secondary {
+  background: #555;
+}
+
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.badge {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: #0ea765;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Services Section */
+#services {
+  padding: 60px 40px;
+  background: #f4f4f4;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2em;
+  color: #0ea765;
+}
+
+/* Grid: 3 tiles per row */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 per row */
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto; /* center the grid */
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.service-card .icon {
+  margin-bottom: 15px;
+}
+
+.service-card svg {
+  width: 50px;
+  height: 50px;
+  stroke: #0ea765;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  color: #0ea765;
+  font-size: 1.2em;
+}
+
+.service-card p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  color: #555;
+}
